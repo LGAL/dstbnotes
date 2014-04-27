@@ -29,7 +29,7 @@
   </tr>
   </table>
   </nav>
-  <section style="background-color:yellow">This is section
+  <section style="background-color:yellow">
   <ul>
     <li><a target="_DataScienceSignatureTrack" href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=courseDescripTop">Data Science Signature Track</a></li>
     <li><a href="https://class.coursera.org/datascitoolbox-001">The Data Scientist's Toolbox - course main page</a></li>
@@ -37,20 +37,21 @@
   </ul>
   </section>
   <section>
-  <h2>Materials per week</h2>
   <table>
     <thead>
     <tr>
-    <th>Week-1</th>    <th>Week- 2</th>    <th>Week-3</th>
+	  <th><h3>Notes per week</h3></th>
 	</tr>
 	</thead>
 	<tfoot>
 	  <tr>
-	  <td>total w1</td><td>total w2</td><td>total w3</td>
+	  <td>total</td>
 	  </tr>
 	</tfoot>
+    <th>Week-1</th>
   <tr>
-  	<td>#1
+  	<td>
+	  #1
   	  <ul>
   	    <li>Slide2: <a href="http://simplystatistics.org/2012/06/22/statistics-and-the-science-club/">Statistics and the science game</a> </li>
   	    <li>slide3:
@@ -62,9 +63,16 @@
   	    <li>Slide7: <a href="http://www.nytimes.com/2009/08/06/technology/06stats.html?_r=0">Statistics is science of learning from data</a> </li>
   	    <li>Slide10: <a href="">Statistics is science of learning from data</a> </li>
   	    <li>Slide16: Drew Conway's <a href="images/DrewConway_Venn.png"> Venn diagram <img src="images/DrewConway_Venn.png" width="48" /></a> and <a href="http://drewconway.com/zia/?p=2378"> Drew Conway videos</a></li>
+      #2
+	  <ul>
+	    <li><a href="http://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3">Getting Help Video</a> to maximize your chance to get a right answer.</li>
+	  </ul>		
   	  </ul>
   	</td>
-	<!-- Second column of first row-->
+  </tr>
+  <th>Week- 2</th>
+  <tr>
+  	<!-- Second Week-->
 	<td>
 	  <ul>
 		<li><a href="https://help.github.com/articles/fork-a-repo">https://help.github.com/articles/fork-a-repo</a></li>
@@ -84,18 +92,135 @@ $ git push</pre>
         <li><a href="http://git-scm.com/doc">http://git-scm.com/doc</a></li>
 		<li><a href="https://help.github.com/">https://help.github.com/</a></li>
 	  </ul>
-	</td>
-	<!-- Third column of first row-->
-	<td>c3r1</td>
-	
-  </tr>
-  <tr>
-	<td>#2
+	  #8 Basic Markdown
 	  <ul>
-	    <li><a href="http://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3">Getting Help Video</a> to maximize your chance to get a right answer.</li>
+	  <li><a href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a></li>
+      <li><a href="http://www.rstudio.com/ide/docs/authoring/using_markdown">http://www.rstudio.com/ide/docs/authoring/using_markdown</a></li>
 	  </ul>
-	</td><td>c2r2</td><td>c3r2</td>
+
+	  </ul>
+	  #9 Installing R packages
+	  <ul>
+      <li><a href="http://cran.r-project.org/">CRAN</a></li>
+      <li><a href="http://bioconductor.org/">Bioconductor Project</a></li>
+	  <li><a href="http://cran.r-project.org/web/views/">CRAN Task Views</a></li>
+      <li><a href=""></a></li>
+	  </ul>
+	</td>
+
   </tr>
+
+  <th>Week-3</th>
+  <tr>
+  	<!-- Third Week-->
+	<td>
+	  #1 Types of questions
+	  <ul>
+	    <li><b>Descriptive</b></li>
+		Just to describe: you describe but you don't interpret what it might mean. <br />
+		E.g. <a href="http://www.census.gov/2010census/">http://www.census.gov/2010census/</a>, <a href="http://books.google.com/ngrams">http://books.google.com/ngrams</a> 
+		<li><b>Exploratory</b></li>
+		Goal: Find relationships you didn't know about		
+		<ul>
+		  <li>Exploratory models are good for discovering new connections</li>
+		  <li>They are also useful for defining future studies</li>
+		  <li>Exploratory analyses are usually not the final say</li>
+		  <li>Exploratory analyses alone should not be used for generalizing/predicting</li>
+        </ul>
+		<a href="http://en.wikipedia.org/wiki/Correlation_does_not_imply_causation">Correlation does not imply causation</a>
+		<li><b><a href="http://en.wikipedia.org/wiki/Inference">Inferential</a></b></li>
+		Goal: Use a relatively small sample of data to say something about a bigger population
+		<ul>
+		  <li>Inference is commonly the goal of statistical models</li>
+		  <li>Inference involves estimating both the quantity you care about and your uncertainty about your estimate</li>
+		  <li>Inference depends heavily on both the population and the sampling scheme</li>
+		</ul>
+		<li><b>Predictive</b></li>
+		Goal: To use the data on some objects to predict values for another object
+		<br />(<a href="http://en.wikipedia.org/wiki/Extrapolation">Extrapolation</a>? Sales "Landing trajectory" projection.)
+		<ul>
+		  <li>If X <ul>predicts</ul> Y it does not mean that X <ul>causes</ul> Y</li>
+		  <li>Accurate prediction depends heavily on measuring the right variables</li>
+		  <li>Although there are better and worse prediction models, more data and a simple model works really well (<a href="http://www.youtube.com/watch?v=yvDCzhbjYWs">Peter Norvig: The Unreasonable Effectiveness of Data</a>)
+		  <br />(Google flu trends: "predicting the present" Really hard to predict the future, easier to predict the present.</li>
+		  <li>Prediction is very hard, especially about the future <a href="http://www.larry.denenberg.com/predictions.html">references</a></li>
+		</ul>
+		<li><b>Causal</b></li>
+		Goal: To find out what happens to one variable when you make another variable change.
+		<ul>
+		  <li>Usually randomized studies are required to identify causation</li>
+		  <li>There are approaches to inferring causation in non-randomized studies, but they are complicated and sensitive to assumptions</li>
+		  <li>Causal relationships are usually identified as average effects, but may not apply to every individual</li>
+		  <li>Causal models are usually the "gold standard" for data analysis</li>
+		</ul>
+		<li><b>Mechanistic</b></li>
+		Goal: Understand the exact changes in variables that lead to changes in other variables for individual objects.
+		<ul>
+		  <li>Incredibly hard to infer, except in simple situations</li>
+		  <li>Usually modeled by a deterministic set of equations (physical/engineering science)</li>
+		  <li>Generally the random component of the data is measurement error</li>
+		  <li>If the equations are known but the parameters are not, they may be inferred with data analysis</li>
+		</ul>
+	  </ul>
+	  #2 What is data?
+	  <ul>
+	    <li>Definition of <a href="http://en.wikipedia.org/wiki/Data">data</a></li>
+		Qualitiative (qualifier, non-aggregable), quantitative (measure, aggregable),
+		<li>What data look like?</li>
+		<ul>
+		  <li>Genome sequnece: http://brianknaus.com/software/srtoolbox/s_4_1_sequence80.txt</li>
+		  <li>TWitter API GET response: https://dev.twitter.com/docs/api/1/get/blocks/blocking</li>
+		  <li>Medical record sample: http://blue-button.github.io/challenge/</li>
+		  <li><a href="http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html?pagewanted=all&_r=1&">Video is data</a></li>
+		  <li>Sound is datat: <a href="http://www.pnas.org/content/109/30/12081.full">Evolution of music by public choice</a> and <a href="https://soundcloud.com/uncoolbob/sets/darwintunes">Darvintunes</a></li>
+		  <li><a href="http://www.data.gov/">http://www.data.gov/</a></li>
+		  <li>Very rarely tabular (relational table) format, this is usually a processing result of other raw formats after some parsing</li>
+		</ul>
+		<li>The data is the second most important thing, the first is question</li>
+		Often the data will limit or enable the questions, but <u>having data can't save you if you don't have a question.</u>
+	  </ul>
+	  #3 What aboud big data?
+	  <ul>
+    	  <li>How much is there? </li>
+    	  <a href="http://mashable.com/2011/06/28/data-infographic/">1.8 ZB created in 2011, doubles every two year</a>
+    	  <li>Why big data now?</li>
+    	  <a href="http://www.jstor.org/discover/10.2307/2786545?uid=3739704&uid=2&uid=4&uid=3739256&sid=21101674727517">Travers and Milgram (1969) Sociometry</a> 6 degrees of separation
+    	  <br /><a href="http://arxiv.org/abs/0803.0939">Leskovec and Horvitz WWW '08</a> 7 degrees of separation
+    	  <li>Big or small - you need the right data</li>
+    	  Chris Stucchio: <a href="http://www.chrisstucchio.com/blog/2013/hadoop_hatred.html">Don't use Hadoop - your data isn't that big</a>
+    	  <br /><a href="http://en.wikipedia.org/wiki/John_Tukey">John Tukey</a> (one of the first data scientists).
+    	  <br /> "... no matter how big the data are."
+	  </ul>
+	  #4 Experimental Design
+      <ul>
+        <li>Why you should care about experimental design?</li>
+        <li>Know and care about the analysis plan!</li>
+        <li>Have a plan for data and code sharing</li>
+		<a href="https://github.com/">https://github.com/</a>, <a href="http://figshare.com/">http://figshare.com/</a>
+		<br><a href="https://github.com/jtleek/datasharing">https://github.com/jtleek/datasharing</a>
+        <li>Formulate your question in advance</li>
+		<a href="http://www.wired.com/2012/04/ff_abtesting/">The A/B Test</a>
+		<li>Statistical inference</li>
+		<li><a href="http://en.wikipedia.org/wiki/Confounding">Confounding</a></li>
+		S->L ? vs. A->S & A->L
+		<li>Correlation is not causation*</li>
+		<a href="http://www.nejm.org/doi/full/10.1056/NEJMon1211064">Chocolate Consumption, Cognitive Function, and Nobel Laureates</a>
+		<li>Randomization and blocking</li>
+		<ul>
+		  <li>Fix a variable</li>
+		  <li>If you don't fix a variable, <a href="http://en.wikipedia.org/wiki/Stratified_sampling">Stratify</a></li>
+		  <li>If you can't fix, randomize it</li>
+		</ul>
+		<li>Why does randomization help?</li>
+		<li>Prediction</li>
+		<li>Prediction vs. inference</li>
+		<li>Prediction key quantities</li>
+		<li>Beware <a href="http://en.wikipedia.org/wiki/Data_dredging">data dredging</a></li>
+	  </ul>
+	</td>
+
+  </tr>
+
   </table>
   </br>
   </section>
